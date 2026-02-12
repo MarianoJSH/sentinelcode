@@ -27,6 +27,11 @@ SentinelCode no es solo un auditor; es una herramienta de precisión. Diseñada 
 
 ---
 
+👤 Autor
+Mariano Desarrollador Fullstack centrado en IA y Seguridad.
+
+Nota: Este proyecto utiliza servicios gratuitos. Si la API no responde de inmediato, por favor espera 30 segundos a que el servidor de Render despierte.
+
 ### 📂 Estructura del Proyecto
 ```text
 sentinelcode/
@@ -37,7 +42,3 @@ sentinelcode/
 │   └── main.ts           # Configuración de seguridad y CORS
 └── README.md
 
-👤 Autor
-Mariano Desarrollador Fullstack centrado en IA y Seguridad.
-
-Nota: Este proyecto utiliza servicios gratuitos. Si la API no responde de inmediato, por favor espera 30 segundos a que el servidor de Render despierte.

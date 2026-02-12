@@ -1,7 +1,7 @@
 # ⚡ SentinelCode AI
 > Auditor de seguridad inteligente impulsado por IA para el desarrollador moderno.
 
-[Demo en vivo](TU_URL_DE_VERCEL) • [Reportar Bug](https://github.com/tu-usuario/sentinelcode/issues) • [Backend API](TU_URL_DE_RENDER/api)
+[Demo en vivo](https://sentinelcode.vercel.app/) • [Reportar Bug](https://github.com/MarianoJSH/sentinelcode/issues) • [Backend API](https://sentinel-code-backend.onrender.com/api)
 
 ---
 
@@ -27,7 +27,7 @@ SentinelCode no es solo un auditor; es una herramienta de precisión. Diseñada 
 
 ---
 
-👤 Autor
+### 👤 Autor
 Mariano Desarrollador Fullstack centrado en IA y Seguridad.
 
 Nota: Este proyecto utiliza servicios gratuitos. Si la API no responde de inmediato, por favor espera 30 segundos a que el servidor de Render despierte.

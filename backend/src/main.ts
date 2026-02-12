@@ -23,7 +23,7 @@ async function bootstrap() {
   // Crucial para que Angular pueda consumir la API desde cualquier url que apuntemos
   const allowedOrigins = [
     'http://localhost:4200',
-    'https://sentinel-code-backend.onrender.com',
+    'https://sentinelcode-klrvu7by0-marianojshs-projects.vercel.app/',
   ];
 
   app.enableCors({

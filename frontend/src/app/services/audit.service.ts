@@ -17,7 +17,7 @@ interface AuditRequest {
 })
 export class AuditService {
     // URL del backend  (ajustada con el prefijo /api)
-    private readonly API_URL = 'http://localhost:3000/api/ai/analyze';
+    private readonly API_URL = 'https://sentinel-code-backend.onrender.com';
 
     constructor (private readonly http: HttpClient) {}
 

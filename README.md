@@ -36,3 +36,8 @@ sentinelcode/
 │   ├── src/ai/           # Módulo de integración con LangChain
 │   └── main.ts           # Configuración de seguridad y CORS
 └── README.md
+
+👤 Autor
+Mariano Desarrollador Fullstack centrado en IA y Seguridad.
+
+Nota: Este proyecto utiliza servicios gratuitos. Si la API no responde de inmediato, por favor espera 30 segundos a que el servidor de Render despierte.

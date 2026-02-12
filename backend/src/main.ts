@@ -29,7 +29,7 @@ async function bootstrap() {
   app.enableCors({
     origin: (origin, callback) => {
       // Si no hay origen (como en herramientas de server-to-server) o el origen está en la lista
-      if (!origin || allowedOrigins.indexOf(origin) !== 1) {
+      if (!origin || allowedOrigins.indexOf(origin) !== -1) {
         callback(null, true);
       }else {
         callback(new Error('Bloqueado por CORS: Este origen no está autorizado'))

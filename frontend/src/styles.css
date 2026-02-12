@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* Escaneamos absolutamente todo en src para no dejarnos nada */
+@source "../src/**/*.html";
+@source "../src/**/*.ts";
+@source "../public/**/*.html";
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Estilo para los bloques de código que devuelve la IA */
+pre code {
+  @apply bg-slate-950 text-cyan-300 p-4 rounded-lg block my-4 border border-slate-800 font-mono text-xs overflow-x-auto;
+}
+
+/* Estilo para los encabezados del reporte */
+h3 {
+  @apply text-cyan-400 font-bold mt-6 mb-2 border-b border-cyan-900/30 pb-1;
+}

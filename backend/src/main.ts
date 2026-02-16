@@ -2,7 +2,6 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import * as dotenv from 'dotenv';
 import { json, urlencoded } from 'express';
-import { index } from '@langchain/core/indexing';
 
 async function bootstrap() {
   // Cargar variables de entorno del archivo .env
@@ -21,21 +20,14 @@ async function bootstrap() {
 
   // Configuración de CORS
   // Crucial para que Angular pueda consumir la API desde cualquier url que apuntemos
-  const allowedOrigins = [
-    'http://localhost:4200',
-    'https://sentinelcode.vercel.app',
-  ];
-
   app.enableCors({
-    origin: (origin, callback) => {
-      // Si no hay origen (como en herramientas de server-to-server) o el origen está en la lista
-      if (!origin || allowedOrigins.indexOf(origin) !== -1) {
-        callback(null, true);
-      }else {
-        callback(new Error('Bloqueado por CORS: Este origen no está autorizado'))
-      }
-    },
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    origin: [
+      'http://localhost:4200',
+      'https://sentinelcode.vercel.app',
+      'https://sentinel-code-ai.vercel.app',
+    ],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'HEAD', 'PATCH'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'Accept'],
     credentials: true,
   });
 
@@ -44,7 +36,7 @@ async function bootstrap() {
   await app.listen(port);
 
   console.log(`--- SENTINEL CODE AI BACKEND ---`);
-  console.log(`🚀 Servidor listo en: http://localhost:${port}/api`);
+  console.log(`🚀 Servidor listo`);
 }
 
 bootstrap();

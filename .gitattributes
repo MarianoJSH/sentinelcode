@@ -1,0 +1,7 @@
+frontend/src/output.css linguist-vendored
+frontend/dist/** linguist-vendored
+
+# Forzamos a que el proyecto se identifique como TypeScript
+*.ts linguist-detectable
+*.html linguist-detectable
+*.css linguist-documentation
